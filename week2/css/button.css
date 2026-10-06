@@ -1,0 +1,54 @@
+button {
+    background-color: black;
+    color: white;
+    padding: 8px 13px;
+    margin: 5px;
+    border: none;
+}
+
+.sign {
+    background-color: rgba(86, 163, 88);
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 6px 15px
+}
+
+.add {
+    background-color: rgba(248, 218, 78);
+    color: black;
+    border-radius: 20px;
+    padding: 5px 45px
+}
+
+.start {
+    background-color: rgba(113, 82, 170);
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 8px 10px
+}
+
+.dowl {
+    background-color: white;
+    color: rgba(115, 120, 128);
+    border: 1px solid rgba(115, 120, 128);
+    border-radius: 2px;
+    padding: 8px 13px
+}
+
+.apply {
+    background-color: rgba(42, 103, 184);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 15px
+}
+
+.save {
+    background-color: white;
+    color: rgba(42, 103, 184);
+    border-radius: 20px;
+    border: 1px solid rgba(42, 103, 184);
+    padding: 8px 15px
+}
