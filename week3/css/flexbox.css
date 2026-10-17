@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+body {
+    font-family: oxygen, sans-serif;
+    background-color: #f6f5ef;
+}
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.box {
+    padding: 17px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
