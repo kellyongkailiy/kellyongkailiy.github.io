@@ -42,3 +42,52 @@ body {
     background-color: #000000;
     color: #FFFFFF;
 }
+
+.brand {
+    width: 100%;
+    padding: 20px 0px;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 90px;
+    gap: 200px;
+}
+
+.word {
+    flex: 1;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 30px 0px;
+}
+
+p {
+    font-size: 20px;
+    margin: 25px 0px;
+}
+
+.book-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px 45px;
+    margin: 30px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-button:hover {
+    transform: scale(1.05);
+    color: #000000;
+    background-color: #b4b4b4;
+}
+
+.illus {
+    max-width: 100%;
+}
