@@ -3,17 +3,12 @@
 .menu {
     display: flex;
     justify-content: space-between;
-
-}
-
-.logo {
     align-items: center;
+    margin: 20px;
 }
 
 .logo img {
     max-width: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .bar {
@@ -28,6 +23,7 @@
 
 .bar h4 {
     font-family: Archivo, sans-serif;
+    margin: 0;
 }
 
 .phone {
@@ -47,6 +43,10 @@
     height: 20px;
 }
 
+.number h4 {
+    margin: 0px;
+}
+
 .contact-button {
     display: inline-block;
     text-decoration: none;
@@ -54,7 +54,6 @@
     color: #ffffff;
     border-radius: 10px;
     padding: 13px 20px;
-    margin: 30px 0px;
     transition: all 0.3 ease-in-out;
 }
 
@@ -69,16 +68,22 @@
 
 @media screen and (max-width:700px) {
 
-    .bar {
-        display: none;
-    }
-
     .number,
     .contact-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .bar {
         display: none;
     }
 
     .menubar {
         display: block;
+    }
+
+    .contact-button {
+        display: none;
     }
 }
