@@ -73,9 +73,12 @@
         display: none;
     }
 
-    .number {
+    .number,
+    .contact-button {
         display: none;
     }
 
-
+    .menubar {
+        display: block;
+    }
 }
