@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+body {
+    margin: 80px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 80px;
 }
 
 .header img {
@@ -41,8 +45,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 90px;
-
 }
 
 .text {
@@ -86,4 +88,84 @@ p {
     display: flex;
     justify-content: center;
     gap: 90px;
+}
+
+/* service section */
+
+.service-section {
+    margin:
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.service-tittle {
+    background-color: #b9ff66;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.service-tittle h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.service p {
+    margin: 0;
+    max-width: 60%;
+    font-size: 18px;
+}
+
+/* box */
+
+.service-box {
+    background-color: #f3f3f3;
+    border-radius: 45px;
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 0px #000000;
+    max-width: 40%;
+    padding: 60px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.search-engine-optimization {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.box-tittle span {
+    background-color: #b9ff66;
+    font-size: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.learn-more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.learn-more h5 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.learn-more img {
+    max-width: 100%;
+}
+
+.right-image {
+    max-width: 50%;
 }
