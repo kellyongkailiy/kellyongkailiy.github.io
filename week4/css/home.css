@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 body {
-    margin: 80px;
+    margin: 50px;
     font-family: "Space Grotesk", sans-serif;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .header {
@@ -87,19 +93,23 @@ p {
 .brand {
     display: flex;
     justify-content: center;
-    gap: 90px;
+    gap: 150px;
 }
 
 /* service section */
 
-.service-section {
-    margin:
+.services-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .service {
     display: flex;
     align-items: center;
     gap: 50px;
+    margin: 50px;
+
 }
 
 .service-tittle {
@@ -121,29 +131,67 @@ p {
 
 /* box */
 
-.service-box {
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+}
+
+.white-box {
     background-color: #f3f3f3;
     border-radius: 45px;
     border: 1px solid #000000;
     box-shadow: 0px 5px 0px #000000;
-    max-width: 40%;
+    width: 35%;
     padding: 60px;
 }
 
-.search {
+.green-box {
+    background-color: #b9ff66;
+    border-radius: 45px;
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 0px #000000;
+    width: 35%;
+    padding: 60px;
+}
+
+.black-box {
+    background-color: #191a23;
+    border-radius: 45px;
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 0px #000000;
+    width: 35%;
+    padding: 60px;
+}
+
+.left-inner-box {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
 
-.search-engine-optimization {
+.green-tittle {
     display: flex;
     flex-direction: column;
     gap: 70px;
 }
 
-.box-tittle span {
+.white-tittle {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.box-green-tittle span {
     background-color: #b9ff66;
+    font-size: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.box-white-tittle span {
+    background-color: #ffffff;
     font-size: 30px;
     border-radius: 10px;
     display: flex;
@@ -156,7 +204,20 @@ p {
     gap: 10px;
 }
 
-.learn-more h5 {
+.white-box h5 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.green-box h5 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.black-box h5 {
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: lighter;
     margin: 0;
@@ -169,3 +230,5 @@ p {
 .right-image {
     max-width: 50%;
 }
+
+.service-section
