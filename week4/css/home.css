@@ -11,6 +11,11 @@ body {
     gap: 100px;
 }
 
+.text img {
+    display: none;
+    max-width: 100%;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -93,6 +98,7 @@ p {
 .brand {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 150px;
 }
 
@@ -188,6 +194,7 @@ p {
     font-size: 30px;
     border-radius: 10px;
     display: flex;
+    padding: 5px 10px 5px 10px;
 }
 
 .box-white-tittle span {
@@ -195,6 +202,7 @@ p {
     font-size: 30px;
     border-radius: 10px;
     display: flex;
+    padding: 5px 10px 5px 10px;
 }
 
 .learn-more {
@@ -231,4 +239,163 @@ p {
     max-width: 50%;
 }
 
-.service-section
+/* proposal */
+.proposal-section {
+    background-color: #f3f3f3;
+    border-radius: 50px;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.proposal-left {
+    width: 50%;
+}
+
+.proposal-section h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.proposal-section p {
+    font-size: 18px;
+}
+
+.proposal-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px 45px;
+    margin: 30px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.proposal-button:hover {
+    transform: scale(1.05);
+    color: #000000;
+    background-color: #b4b4b4;
+}
+
+.proposal-right-img {
+    margin-top: -470px;
+    margin-left: 1000px;
+}
+
+.bar img {
+    display: none;
+    width: 50%;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 20px;
+    }
+
+    .text img {
+        display: block;
+    }
+
+    .bar img {
+        display: block;
+    }
+
+    .bar a {
+        display: none;
+    }
+
+    .text {
+        max-width: 90%;
+    }
+
+    .text h1 {
+        font-size: 45px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .illus img {
+        display: none;
+    }
+
+    .book-button {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .brand {
+        gap: 100px;
+    }
+
+    .service {
+        flex-direction: column;
+    }
+
+    .service p {
+        max-width: 100%;
+    }
+
+    /* box */
+    .box {
+        gap: 40px;
+    }
+
+    .white-box {
+        width: 100%;
+    }
+
+    .green-box {
+        width: 100%;
+    }
+
+    .black-box {
+        width: 100%;
+    }
+
+    .left-inner-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .learn-more h5 {
+        display: none;
+    }
+
+
+    .right-image {
+        margin-top: 70px;
+        margin-left: -20px;
+    }
+
+    .green-tittle {
+
+        gap: 100px;
+    }
+
+    .white-tittle {
+
+        gap: 100px;
+    }
+
+    .box-green-tittle span {
+        font-size: 18px;
+    }
+
+    .box-white-tittle span {
+        font-size: 18px;
+    }
+
+    .proposal-left {
+        width: 100%;
+    }
+
+    .proposal-right-img {
+        display: none;
+    }
+
+}
