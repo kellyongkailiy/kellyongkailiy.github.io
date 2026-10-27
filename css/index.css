@@ -127,6 +127,7 @@ header {
 .lowertext {
     text-align: center;
     font-size: 12px;
+    color: #FFFFFF;
 }
 
 /* phone view */
@@ -276,7 +277,4 @@ header {
         margin: 0px 105px;
     }
 
-    .bigbrid1 {
-        display: none;
-    }
 }
