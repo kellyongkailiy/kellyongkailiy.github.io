@@ -2,13 +2,26 @@
 
 /* === ROOT VARIABLES === */
 :root {
-    --primary: #2b8df5;
-    --secondary: #f5b42b;
-    --text-dark: #222;
-    --text-light: #777;
-    --bg-light: #f9f9f9;
+    /* text colors */
+    --text-black: #000000;
+    --text-grey: #A1A1A1;
+    --text-white: #ffffff;
+    --text-gold: #bda16b;
+
+    /* bg color */
+    --bg-black: #000000;
+    --bg-dark: #333333;
+    --bg-light: #f2f2f2;
+    --bg-white: #ffffff;
+
+    /* font type */
+    --font-base: "Work Sans", sans-serif;
+    --font-heading: "Bebas Neue", sans-serif;
+    --font-p: "Lora", serif;
+
+    /* border radius */
     --radius: 8px;
-    --font-base: "Inter", sans-serif;
+
 }
 
 /* === RESET / NORMALIZE === */
@@ -27,4 +40,35 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+/* body */
+body {
+    font-family: var(--font-base);
+    background-color: var(--bg-white);
+}
+
+/* container */
+.container {
+    width: 100%;
+    padding: 0 10%;
+}
+
+/* heading */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-heading);
+}
+
+/* paragraph */
+p {
+    font-family: var(--font-p): font-size:19px;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
 }
