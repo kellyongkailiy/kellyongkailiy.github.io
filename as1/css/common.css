@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* === ROOT VARIABLES === */
+/* root variables */
 :root {
     /* text colors */
     --text-black: #000000;
@@ -24,8 +24,7 @@
 
 }
 
-/* === RESET / NORMALIZE === */
-
+/* reset */
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +53,7 @@ body {
     padding: 0 10%;
 }
 
-/* heading */
+/* text */
 h1,
 h2,
 h3,
@@ -63,12 +62,125 @@ h5 {
     font-family: var(--font-heading);
 }
 
-/* paragraph */
 p {
-    font-family: var(--font-p): font-size:19px;
+    font-family: var(--font-p);
+    font-size: 19px;
 }
 
-/* navbar */
-.navbar {
+/* header */
+.header {
     width: 100%;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-right,
+.header-list {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    gap: 16px;
+}
+
+.header-list {
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style-type: none;
+}
+
+.header-list a {
+    display: block;
+    padding: 8px 0;
+    color: var(--text-grey);
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.header-list .active,
+.header-list a:hover,
+.header-list a:focus {
+    color: var(--text-white);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo-img {
+    width: 64px;
+    height: 59px;
+}
+
+.logo-name {
+    font-family: var(--font-heading);
+    font-size: 34px;
+    line-height: 1;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 36px;
+}
+
+.cart img {
+    width: 19px;
+    height: 19px;
+    transition: 0.2s;
+}
+
+.cart:hover img,
+.cart:focus img {
+    opacity: 0.7;
+}
+
+.header-icon {
+    display: none;
+}
+
+.header-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* header - tablet */
+@media (max-width: 1280px) {
+    .header-box {
+        padding: 38px 8%;
+    }
+
+    .logo {
+        gap: 16px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .header-icon {
+        display: block;
+    }
+}
+
+/* header - mobile */
+@media (max-width: 768px) {
+    .header-box {
+        padding: 38px 6.25%;
+    }
 }

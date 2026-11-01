@@ -1,0 +1,6 @@
+/* header - home desktop */
+@media (min-width: 1281px) {
+    .home-header {
+        background: url("../images/header-bg.png");
+    }
+}
