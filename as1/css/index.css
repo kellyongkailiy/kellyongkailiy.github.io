@@ -117,3 +117,66 @@
         line-height: 1.2131;
     }
 }
+
+/* popular */
+.popular {
+    padding-top: 112px;
+    padding-bottom: 100px;
+    background-color: var(--bg-white);
+    color: var(--text-black);
+    text-align: center;
+}
+
+.popular-title {
+    margin-top: 64px;
+}
+
+.popular-description {
+    max-width: 660px;
+    margin: 16px auto 0;
+    text-align: left;
+}
+
+.popular-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+    max-width: 1232px;
+    margin: 108px auto 0;
+}
+
+.popular-card {
+    width: 292px;
+    min-width: 0;
+}
+
+.popular-card img {
+    width: 100%;
+    height: auto;
+}
+
+.popular-card-title {
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.popular-card .btn {
+    min-width: 160px;
+    margin-top: 24px;
+}
+
+.popular-featured {
+    width: 529px;
+}
+
+.popular-featured .popular-card-title {
+    margin-top: 24px;
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.popular-seasonal {
+    width: 298px;
+}

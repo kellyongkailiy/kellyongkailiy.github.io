@@ -365,3 +365,24 @@ button,
         gap: 8px;
     }
 }
+
+/* buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 24px;
+    background-color: transparent;
+    color: var(--text-white);
+    border: 1px solid var(--bg-white);
+    text-align: center;
+    transition: border-color 0.2s;
+}
+
+.btn-outline {
+    color: var(--text-black);
+    border-color: var(--text-grey);
+}
+
+.btn-outline:hover,
+.btn-outline:focus-visible {
+    border-color: var(--bg-dark);
+}
