@@ -181,6 +181,23 @@
     width: 298px;
 }
 
+/* atmosphere - desktop */
+.atmosphere {
+    aspect-ratio: 1536 / 799;
+    padding-top: 152px;
+    padding-bottom: 152px;
+    background-color: var(--bg-black);
+    background-image: url("../images/dining-table.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--text-white);
+}
+
+.atmosphere-description {
+    max-width: 520px;
+    margin-top: 48px;
+}
+
 /* popular-tablet and mobile */
 @media (max-width: 1280px) {
     .popular {
