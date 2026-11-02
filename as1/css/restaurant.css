@@ -1,0 +1,53 @@
+/* header - restaurant desktop */
+.restaurant-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: url("../images/header-bg.png");
+}
+
+/* restaurant hero - desktop */
+.restaurant-hero {
+    display: flex;
+    aspect-ratio: 1540 / 784;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+}
+
+.restaurant-hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 49.2%;
+    padding: 128px 48px 128px 9.5%;
+}
+
+.restaurant-hero-content > * {
+    width: 100%;
+    max-width: 560px;
+}
+
+.restaurant-hero-title {
+    margin-top: 24px;
+}
+
+.restaurant-hero-description {
+    margin-top: 48px;
+}
+
+.restaurant-hero-photo {
+    position: relative;
+    width: 50.8%;
+    overflow: hidden;
+}
+
+.restaurant-hero-photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+}
