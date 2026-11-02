@@ -181,8 +181,8 @@
     width: 298px;
 }
 
-/* popular-tablet */
-@media (min-width: 769px) and (max-width: 1280px) {
+/* popular-tablet and mobile */
+@media (max-width: 1280px) {
     .popular {
         padding: 112px 0 0;
     }
@@ -235,5 +235,50 @@
         margin-top: 24px;
         font-size: 30px;
         line-height: 36px;
+    }
+}
+
+/* popular-mobile */
+@media (max-width: 768px) {
+    .popular {
+        padding-top: 64px;
+    }
+
+    .popular .section-title {
+        margin: 0 6.25%;
+    }
+
+    .popular .section-title > span {
+        display: block;
+    }
+
+    .popular .popular-dot {
+        display: none;
+    }
+
+    .popular-title {
+        margin-top: 64px;
+    }
+
+    .popular-description {
+        width: 87.5%;
+        max-width: 560px;
+    }
+
+    .popular-cards {
+        margin-top: 96px;
+    }
+
+    .popular-card {
+        padding-bottom: 96px;
+    }
+
+    .popular-card img {
+        aspect-ratio: 320 / 293;
+    }
+
+    .popular-card-title,
+    .popular-featured .popular-card-title {
+        margin-top: 48px;
     }
 }
