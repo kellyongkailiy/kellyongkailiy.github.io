@@ -198,6 +198,45 @@
     margin-top: 48px;
 }
 
+/* atmosphere-tablet */
+@media (max-width: 1280px) {
+    .atmosphere {
+        aspect-ratio: 1024 / 592;
+        padding: 160px 9.375% 128px;
+        background-position: left top;
+        background-size: auto 128%;
+    }
+}
+
+/* atmosphere-mobile */
+@media (max-width: 768px) {
+    .atmosphere {
+        aspect-ratio: auto;
+        padding: 0 0 72px;
+        background-image: none;
+        text-align: center;
+    }
+
+    .atmosphere::before {
+        content: "";
+        display: block;
+        width: 100%;
+        aspect-ratio: 8 / 5;
+        margin-bottom: 48px;
+        background: url("../images/dining-table.jpg") center / cover no-repeat;
+    }
+
+    .atmosphere h2 {
+        margin: 0 6.25%;
+    }
+
+    .atmosphere-description {
+        width: 87.5%;
+        max-width: 560px;
+        margin: 24px auto 0;
+    }
+}
+
 /* popular-tablet and mobile */
 @media (max-width: 1280px) {
     .popular {
