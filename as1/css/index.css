@@ -180,3 +180,60 @@
 .popular-seasonal {
     width: 298px;
 }
+
+/* popular-tablet */
+@media (min-width: 769px) and (max-width: 1280px) {
+    .popular {
+        padding: 112px 0 0;
+    }
+
+    .popular .section-title {
+        margin: 0 8%;
+    }
+
+    .popular-title {
+        margin-top: 48px;
+    }
+
+    .popular-description {
+        width: 60%;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .popular-cards {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        max-width: none;
+        margin-top: 48px;
+    }
+
+    .popular-card,
+    .popular-featured,
+    .popular-seasonal {
+        width: 100%;
+        padding-bottom: 80px;
+    }
+
+    .popular-featured {
+        order: -1;
+    }
+
+    .popular-card img {
+        aspect-ratio: 8 / 5;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .popular-seasonal img {
+        object-position: center top;
+    }
+
+    .popular-card-title,
+    .popular-featured .popular-card-title {
+        margin-top: 24px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
