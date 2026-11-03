@@ -119,8 +119,7 @@ p {
     letter-spacing: 1.4px;
 }
 
-button,
-.button {
+.btn {
     font-family: var(--font-base);
     font-size: 15px;
     font-weight: 400;
