@@ -24,7 +24,7 @@
     padding: 120px 48px;
 }
 
-.hero-content > * {
+.hero-content>* {
     width: 100%;
     max-width: 410px;
     text-align: left;
@@ -108,7 +108,7 @@
         padding: 100px 6.25% 80px;
     }
 
-    .hero-content > * {
+    .hero-content>* {
         max-width: 480px;
     }
 
@@ -217,8 +217,7 @@
         text-align: center;
     }
 
-    .atmosphere::before {
-        content: "";
+    .atmosphere {
         display: block;
         width: 100%;
         aspect-ratio: 8 / 5;
@@ -304,7 +303,7 @@
         margin: 0 6.25%;
     }
 
-    .popular .section-title > span {
+    .popular .section-title>span {
         display: block;
     }
 
