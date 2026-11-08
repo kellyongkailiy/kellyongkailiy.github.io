@@ -65,33 +65,33 @@ h5 {
 
 h1 {
     font-size: 95px;
-    line-height: 114px;
+    line-height: 1;
 }
 
 h2 {
     font-size: 70px;
-    line-height: 84px;
+    line-height: 1;
 }
 
 h3 {
     font-size: 56px;
-    line-height: 64px;
+    line-height: 1;
 }
 
 h4 {
     font-size: 30px;
-    line-height: 36px;
+    line-height: 1;
 }
 
 h5 {
     font-size: 25px;
-    line-height: 30px;
+    line-height: 1;
 }
 
 p {
     font-family: var(--font-p);
     font-size: 19px;
-    line-height: 33.3px;
+    line-height: 1.5;
 }
 
 .section-title,
@@ -103,20 +103,20 @@ p {
 
 .section-title {
     font-size: 46px;
-    line-height: 55.2px;
+    line-height: 1.5;
 }
 
 .menu-title {
     font-size: 40px;
-    line-height: 48px;
+    line-height: 1.5;
 }
 
 .eyebrow-heading {
     font-family: var(--font-base);
     font-size: 15px;
     font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 1.4px;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 /* header */
@@ -157,7 +157,7 @@ p {
     color: var(--text-grey);
     font-size: 13px;
     letter-spacing: 1px;
-    transition: 0.2s;
+    transition: 200ms;
 }
 
 .header-list .active,
@@ -194,7 +194,7 @@ p {
 .cart img {
     width: 19px;
     height: 19px;
-    transition: 0.2s;
+    transition: 200ms;
 }
 
 .cart:hover img,
@@ -248,7 +248,7 @@ p {
 .footer-list a {
     display: block;
     border-radius: 50%;
-    transition: 0.2s;
+    transition: 200ms;
 }
 
 .footer-list img {
@@ -270,7 +270,7 @@ p {
     font-family: var(--font-base);
     font-size: 15px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 1.5;
     letter-spacing: 1px;
 }
 
@@ -281,7 +281,7 @@ p {
     color: var(--text-white);
     border: 1px solid var(--bg-white);
     text-align: center;
-    transition: border-color 0.2s;
+    transition: border-color 200ms;
 }
 
 .btn-outline {
@@ -317,27 +317,27 @@ p {
 @media (max-width: 768px) {
     h1 {
         font-size: 84px;
-        line-height: 101.9px;
+        line-height: 1;
     }
 
     h2 {
         font-size: 63px;
-        line-height: 76.4px;
+        line-height: 1;
     }
 
     h3 {
         font-size: 51px;
-        line-height: 81.3px;
+        line-height: 1;
     }
 
     .section-title {
         font-size: 43px;
-        line-height: 52px;
+        line-height: 1.5;
     }
 
     .menu-title {
         font-size: 38px;
-        line-height: 45.9px;
+        line-height: 1.5;
     }
 }
 
@@ -363,7 +363,7 @@ p {
 /* header-mobile */
 @media (max-width: 768px) {
     .header-box {
-        padding: 38px 6.25%;
+        padding: 38px 6%;
     }
 }
 
@@ -374,7 +374,7 @@ p {
     }
 
     .footer-box {
-        padding: 0 6.25%;
+        padding: 0 6%;
     }
 
     .footer-text {
