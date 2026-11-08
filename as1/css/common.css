@@ -48,7 +48,9 @@ body {
 }
 
 /* container */
-.container {
+.container,
+.header-box,
+.footer-box {
     width: 100%;
     padding: 0 10%;
 }
