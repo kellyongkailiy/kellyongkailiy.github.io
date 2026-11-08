@@ -51,3 +51,38 @@
     object-fit: cover;
     object-position: right center;
 }
+
+/* elegance - desktop */
+.elegance {
+    padding-top: 104px;
+    padding-bottom: 192px;
+    background-color: var(--bg-white);
+    color: var(--text-black);
+    text-align: center;
+}
+
+.elegance-title {
+    font-size: 95px;
+    line-height: 114px;
+}
+
+.elegance-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    max-width: 1232px;
+    margin: 64px auto 0;
+}
+
+.elegance-side {
+    width: 24%;
+    max-width: 293px;
+    height: auto;
+}
+
+.elegance-middle {
+    width: 34%;
+    max-width: 415px;
+    height: auto;
+}
