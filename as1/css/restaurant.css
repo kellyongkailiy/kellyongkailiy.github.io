@@ -7,7 +7,7 @@
     background: url("../images/header-bg.png");
 }
 
-/* restaurant hero - desktop */
+/* restaurant hero */
 .restaurant-hero {
     display: flex;
     aspect-ratio: 1540 / 784;
@@ -52,7 +52,7 @@
     object-position: right center;
 }
 
-/* elegance - desktop */
+/* elegance  */
 .elegance {
     padding-top: 104px;
     padding-bottom: 192px;
@@ -84,5 +84,77 @@
 .elegance-middle {
     width: 34%;
     max-width: 415px;
+    height: auto;
+}
+
+/* gallery*/
+.gallery {
+    background-color: var(--bg-white);
+    color: var(--text-black);
+}
+
+.gallery-heading {
+    padding-bottom: 36px;
+    text-align: center;
+}
+
+.gallery-title {
+    font-size: 95px;
+    line-height: 114px;
+}
+
+.gallery-description {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+}
+
+/* reviews */
+.reviews {
+    padding: 168px 9.5% 104px;
+    background-color: var(--bg-white);
+    color: var(--text-black);
+    text-align: center;
+}
+
+.reviews-title {
+    font-size: 95px;
+    line-height: 114px;
+}
+
+.reviews-cards {
+    display: flex;
+    gap: 32px;
+    max-width: 1248px;
+    margin: 40px auto 0;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 32%;
+    padding: 64px 4px 48px;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+}
+
+.review-name {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.review-text {
+    width: 100%;
+}
+
+.reviews img {
+    width: 271px;
     height: auto;
 }
