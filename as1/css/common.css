@@ -269,7 +269,11 @@ p {
 
 /* button */
 .btn,
-.btn-border {
+.btn-border,
+.btn-outline,
+.btn-black,
+.btn-white,
+.btn-gold {
     font-family: var(--font-normal);
     font-size: 15px;
     font-weight: 400;
@@ -284,14 +288,50 @@ p {
     transition: border-color 200ms;
 }
 
-.btn-border {
+.btn-border,
+.btn-outline {
     color: var(--text-black);
     border-color: var(--text-grey);
 }
 
 .btn-border:hover,
-.btn-border:focus-visible {
+.btn-border:focus-visible,
+.btn-outline:hover,
+.btn-outline:focus-visible {
     border-color: var(--background-dark);
+}
+
+/* button colors */
+.btn-black,
+.btn-white,
+.btn-gold {
+    padding: 15px 25px;
+    transition: background-color 200ms, color 200ms, border-color 200ms;
+}
+
+.btn-black:hover,
+.btn-black:focus-visible {
+    background-color: var(--background-dark);
+}
+
+.btn-white:hover,
+.btn-white:focus-visible {
+    background-color: var(--background-white);
+    color: var(--text-black);
+}
+
+.btn-gold {
+    background-color: var(--text-gold);
+    border-color: var(--text-gold);
+}
+
+.btn-gold:hover,
+.btn-gold:focus-visible {
+    background-color: var(--background-white);
+    color: var(--text-black);
+    border-color: var(--text-grey);
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
 
 /* header - tablet */
