@@ -59,3 +59,129 @@
     max-width: 430px;
     margin-top: 50px;
 }
+
+/* kitchen */
+.kitchen {
+    background-color: var(--background-white);
+    color: var(--text-black);
+    text-align: center;
+}
+
+.kitchen h2 {
+    padding: 70px 5% 55px;
+    font-size: 95px;
+    line-height: 1;
+}
+
+.kitchen-photos {
+    display: flex;
+    gap: 5px;
+    aspect-ratio: 1540 / 580;
+}
+
+.kitchen-left {
+    width: 55%;
+    background-image: url("../images/about-us/culinary-left.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.kitchen-right {
+    width: 45%;
+    background-image: url("../images/about-us/culinary-right.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.kitchen-text {
+    padding: 45px 15% 80px;
+}
+
+/* commitment */
+.commitment {
+    display: flex;
+    aspect-ratio: 1540 / 760;
+    background-color: var(--background-black);
+    color: var(--text-white);
+}
+
+.commitment-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    padding: 80px 0;
+}
+
+.commitment-box h2 {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.commitment-box p {
+    width: 75%;
+    margin: 55px auto 0;
+}
+
+.commitment-left {
+    width: 35%;
+    background-image: url("../images/about-us/commitment-left.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.commitment-right {
+    width: 30%;
+    background-image: url("../images/about-us/commitment-right.png");
+    background-position: center;
+    background-size: cover;
+}
+
+/* awards */
+.awards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    aspect-ratio: 1540 / 1025;
+    padding: 150px 10%;
+    background-color: var(--background-black);
+    background-image: url("../images/about-us/achievements.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--text-white);
+    text-align: center;
+}
+
+.awards-text {
+    max-width: 950px;
+    margin: 60px auto 0;
+}
+
+.award-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 55px;
+}
+
+.award-box {
+    width: 30%;
+}
+
+.award-box h3 {
+    font-size: 55px;
+    line-height: 1;
+}
+
+.award-line {
+    width: 85px;
+    margin: 25px auto 0;
+    border-top: 1px solid var(--text-grey);
+}
+
+.award-box img {
+    height: auto;
+    margin: 50px auto 0;
+}
