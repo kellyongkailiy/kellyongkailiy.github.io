@@ -59,3 +59,61 @@
 #duck {
     background-image: url("../images/menu/menu-food-right.png");
 }
+
+/* main course */
+.course {
+    display: flex;
+    background-color: var(--bg-white);
+    color: var(--text-black);
+}
+
+.course-photo {
+    width: 50%;
+    aspect-ratio: 755 / 1005;
+    background-image: url("../images/menu/menu-main-course.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.course-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 60px 5%;
+}
+
+.course-content h2 {
+    margin-bottom: 35px;
+    font-size: 95px;
+    line-height: 1;
+}
+
+.menu-item {
+    padding: 15px 0;
+}
+
+.item-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.item-heading h3 {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.price {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.menu-item p {
+    margin-top: 5px;
+}
+
+.divider {
+    border-bottom: 1px solid var(--bg-light);
+}
