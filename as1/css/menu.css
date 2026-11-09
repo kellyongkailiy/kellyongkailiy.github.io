@@ -1,0 +1,61 @@
+/* menu header */
+.header-box {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* menu hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 335px;
+    background-color: var(--bg-black);
+    background-image: url("../images/menu/menu-hero.png");
+    background-position: center;
+    background-size: cover;
+    color: var(--text-white);
+    text-align: center;
+}
+
+.hero h1 {
+    margin-top: 15px;
+}
+
+/* chef recommendations */
+.recommendations {
+    display: flex;
+    gap: 35px;
+    padding: 70px 50px 60px;
+    background-color: var(--bg-white);
+}
+
+.dish {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 35%;
+    aspect-ratio: 470 / 515;
+    padding: 15px;
+    background-position: center;
+    background-size: cover;
+    color: var(--text-white);
+    text-align: right;
+}
+
+.dish h2 {
+    font-size: 30px;
+    line-height: 1;
+}
+
+#lobster {
+    background-image: url("../images/menu/menu-food-left.png");
+}
+
+#chocolate {
+    background-image: url("../images/menu/menu-food-middle.png");
+}
+
+#duck {
+    background-image: url("../images/menu/menu-food-right.png");
+}
