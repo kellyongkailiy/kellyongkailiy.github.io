@@ -308,3 +308,111 @@
         background-image: url("../images/menu/tablet-croctails.png");
     }
 }
+
+/* menu - mobile */
+@media (max-width: 768px) {
+    .header-box {
+        padding: 40px 5%;
+    }
+
+    .hero {
+        aspect-ratio: 640 / 335;
+        background-image: url("../images/menu/mobile-hero.png");
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    .food-list {
+        gap: 65px;
+        padding: 110px 0 0;
+    }
+
+    .food-box {
+        max-width: none;
+        aspect-ratio: 640 / 615;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #duck {
+        aspect-ratio: 640 / 615;
+    }
+
+    .main-course-photo {
+        display: none;
+    }
+
+    .main-course-text {
+        padding: 100px 5% 170px;
+    }
+
+    .main-course-text h2 {
+        margin-bottom: 40px;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .food-item {
+        padding: 30px 0;
+    }
+
+    .food-item p {
+        margin-top: 30px;
+    }
+
+    .dessert-hero {
+        height: auto;
+        aspect-ratio: 640 / 340;
+        background-image: url("../images/menu/mobile-dessert.png");
+    }
+
+    .dessert-hero h2 {
+        font-size: 80px;
+    }
+
+    .dessert-list {
+        gap: 80px;
+        padding: 110px 5% 80px;
+    }
+
+    .dessert-box,
+    .dessert-low {
+        max-width: none;
+    }
+
+    .dessert-photo {
+        display: block;
+    }
+
+    .dessert-tablet {
+        display: none;
+    }
+
+    .drinks {
+        aspect-ratio: auto;
+        padding: 110px 10% 160px;
+        background-image: url("../images/menu/mobile-croctails.png");
+    }
+
+    .drinks-text,
+    .drinks-description {
+        max-width: 450px;
+    }
+
+    .drinks-text h2 {
+        max-width: 350px;
+        font-size: 80px;
+    }
+
+    .drinks-line {
+        width: 70px;
+        margin: 30px 0;
+    }
+
+    .drinks-text .btn-black {
+        margin-top: 65px;
+    }
+}
