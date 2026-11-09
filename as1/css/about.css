@@ -1,0 +1,61 @@
+/* about header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.header-box {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* about hero */
+.hero {
+    display: flex;
+    aspect-ratio: 1540 / 760;
+    background-color: var(--background-black);
+    color: var(--text-white);
+}
+
+.hero-photo {
+    width: 55%;
+    background-image: url("../images/about-us/hero.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    padding: 140px 5% 110px;
+    text-align: center;
+}
+
+.hero-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%;
+    max-width: 430px;
+}
+
+.hero-line {
+    width: 85px;
+    border-top: 1px solid var(--text-grey);
+}
+
+.hero-box h1 {
+    margin-top: 20px;
+}
+
+.hero-text {
+    max-width: 430px;
+    margin-top: 50px;
+}
