@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     height: 335px;
-    background-color: var(--bg-black);
+    background-color: var(--background-black);
     background-image: url("../images/menu/menu-hero.png");
     background-position: center;
     background-size: cover;
@@ -22,15 +22,15 @@
     margin-top: 15px;
 }
 
-/* chef recommendations */
-.recommendations {
+/* recommended food */
+.food-list {
     display: flex;
     gap: 35px;
     padding: 70px 50px 60px;
-    background-color: var(--bg-white);
+    background-color: var(--background-white);
 }
 
-.dish {
+.food-box {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -43,7 +43,7 @@
     text-align: right;
 }
 
-.dish h2 {
+.food-box h2 {
     font-size: 30px;
     line-height: 1;
 }
@@ -61,13 +61,13 @@
 }
 
 /* main course */
-.course {
+.main-course {
     display: flex;
-    background-color: var(--bg-white);
+    background-color: var(--background-white);
     color: var(--text-black);
 }
 
-.course-photo {
+.main-course-photo {
     width: 50%;
     aspect-ratio: 755 / 1005;
     background-image: url("../images/menu/menu-main-course.png");
@@ -75,7 +75,7 @@
     background-size: cover;
 }
 
-.course-content {
+.main-course-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,24 +83,24 @@
     padding: 60px 5%;
 }
 
-.course-content h2 {
+.main-course-text h2 {
     margin-bottom: 35px;
     font-size: 95px;
     line-height: 1;
 }
 
-.menu-item {
+.food-item {
     padding: 15px 0;
 }
 
-.item-heading {
+.food-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
 }
 
-.item-heading h3 {
+.food-title h3 {
     font-size: 30px;
     line-height: 1;
 }
@@ -110,10 +110,10 @@
     line-height: 1.5;
 }
 
-.menu-item p {
+.food-item p {
     margin-top: 5px;
 }
 
-.divider {
-    border-bottom: 1px solid var(--bg-light);
+.line {
+    border-bottom: 1px solid var(--background-light);
 }

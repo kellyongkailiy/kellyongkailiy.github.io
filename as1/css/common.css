@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* root variables */
+/* common settings */
 :root {
     /* text colors */
     --text-black: #000000;
@@ -8,19 +8,19 @@
     --text-white: #ffffff;
     --text-gold: #bda16b;
 
-    /* bg color */
-    --bg-black: #000000;
-    --bg-dark: #333333;
-    --bg-light: #f2f2f2;
-    --bg-white: #ffffff;
+    /* background colors */
+    --background-black: #000000;
+    --background-dark: #333333;
+    --background-light: #f2f2f2;
+    --background-white: #ffffff;
 
-    /* font type */
-    --font-base: "Work Sans", sans-serif;
-    --font-heading: "Bebas Neue", sans-serif;
-    --font-p: "Lora", serif;
+    /* font */
+    --font-normal: "Work Sans", sans-serif;
+    --font-title: "Bebas Neue", sans-serif;
+    --font-paragraph: "Lora", serif;
 
-    /* border radius */
-    --radius: 8px;
+    /* round corners */
+    --corner-size: 8px;
 
 }
 
@@ -43,12 +43,12 @@ a {
 
 /* body */
 body {
-    font-family: var(--font-base);
-    background-color: var(--bg-white);
+    font-family: var(--font-normal);
+    background-color: var(--background-white);
 }
 
-/* container */
-.container,
+/* page spacing */
+.page-box,
 .header-box,
 .footer-box {
     width: 100%;
@@ -61,7 +61,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: var(--font-heading);
+    font-family: var(--font-title);
     font-weight: 400;
 }
 
@@ -91,14 +91,14 @@ h5 {
 }
 
 p {
-    font-family: var(--font-p);
+    font-family: var(--font-paragraph);
     font-size: 19px;
     line-height: 1.5;
 }
 
 .section-title,
 .menu-title {
-    font-family: var(--font-p);
+    font-family: var(--font-paragraph);
     font-style: italic;
     font-weight: 400;
 }
@@ -113,8 +113,8 @@ p {
     line-height: 1.5;
 }
 
-.eyebrow-heading {
-    font-family: var(--font-base);
+.small-title {
+    font-family: var(--font-normal);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.5;
@@ -124,7 +124,7 @@ p {
 /* header */
 .header {
     width: 100%;
-    background-color: var(--bg-black);
+    background-color: var(--background-black);
     color: var(--text-white);
 }
 
@@ -180,7 +180,7 @@ p {
 }
 
 .logo-name {
-    font-family: var(--font-heading);
+    font-family: var(--font-title);
     font-size: 34px;
     line-height: 1;
 }
@@ -216,7 +216,7 @@ p {
 /* footer */
 .footer {
     padding: 164px 0 136px;
-    background-color: var(--bg-black);
+    background-color: var(--background-black);
     background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)), url("../images/footer-img.png");
     background-position: center top;
     background-size: cover;
@@ -267,36 +267,34 @@ p {
     outline-offset: 4px;
 }
 
-/* buttons */
-.btn {
-    font-family: var(--font-base);
+/* button */
+.btn,
+.btn-border {
+    font-family: var(--font-normal);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 1px;
-}
-
-.btn {
     display: inline-block;
     padding: 8px 24px;
     background-color: transparent;
     color: var(--text-white);
-    border: 1px solid var(--bg-white);
+    border: 1px solid var(--background-white);
     text-align: center;
     transition: border-color 200ms;
 }
 
-.btn-outline {
+.btn-border {
     color: var(--text-black);
     border-color: var(--text-grey);
 }
 
-.btn-outline:hover,
-.btn-outline:focus-visible {
-    border-color: var(--bg-dark);
+.btn-border:hover,
+.btn-border:focus-visible {
+    border-color: var(--background-dark);
 }
 
-/* header-tablet */
+/* header - tablet */
 @media (max-width: 1280px) {
     .header-box {
         padding: 38px 8%;
@@ -315,7 +313,7 @@ p {
     }
 }
 
-/* text-mobile */
+/* text - mobile */
 @media (max-width: 768px) {
     h1 {
         font-size: 84px;
@@ -343,7 +341,7 @@ p {
     }
 }
 
-/* footer-tablet */
+/* footer - tablet */
 @media (max-width: 1280px) {
     .footer {
         padding: 128px 0;
@@ -362,14 +360,14 @@ p {
     }
 }
 
-/* header-mobile */
+/* header - mobile */
 @media (max-width: 768px) {
     .header-box {
         padding: 38px 6%;
     }
 }
 
-/* footer-mobile */
+/* footer - mobile */
 @media (max-width: 768px) {
     .footer {
         padding: 72px 0 104px;

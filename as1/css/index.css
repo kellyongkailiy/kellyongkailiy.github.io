@@ -1,5 +1,5 @@
-/* header - home desktop */
-.home-header {
+/* home header - desktop */
+.header {
     position: absolute;
     top: 0;
     left: 0;
@@ -11,11 +11,11 @@
 .hero {
     display: flex;
     aspect-ratio: 1540 / 784;
-    background-color: var(--bg-black);
+    background-color: var(--background-black);
     color: var(--text-white);
 }
 
-.hero-content {
+.hero-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@
     padding: 120px 48px;
 }
 
-.hero-content>* {
+.hero-box>* {
     width: 100%;
     max-width: 410px;
     text-align: left;
@@ -34,7 +34,7 @@
     margin-top: 24px;
 }
 
-.hero-description {
+.hero-text {
     max-width: 410px;
     margin-top: 40px;
 }
@@ -57,15 +57,15 @@
     transform-origin: center 70%;
 }
 
-/* header-tablet and mobile */
+/* header - tablet and mobile */
 @media (max-width: 1280px) {
-    .home-header {
+    .header {
         position: static;
-        background: var(--bg-black);
+        background: var(--background-black);
     }
 }
 
-/* hero-tablet */
+/* hero - tablet */
 @media (max-width: 1280px) {
     .hero {
         flex-direction: column-reverse;
@@ -82,18 +82,18 @@
         transform: none;
     }
 
-    .hero-content {
+    .hero-box {
         align-items: flex-start;
         width: 100%;
         padding: 100px 20.625% 80px;
     }
 
-    .hero-description {
+    .hero-text {
         margin-top: 24px;
     }
 }
 
-/* hero-mobile */
+/* hero - mobile */
 @media (max-width: 768px) {
     .hero-photo {
         aspect-ratio: 3 / 2;
@@ -103,12 +103,12 @@
         object-position: center bottom;
     }
 
-    .hero-content {
+    .hero-box {
         align-items: center;
         padding: 100px 6.25% 80px;
     }
 
-    .hero-content>* {
+    .hero-box>* {
         max-width: 480px;
     }
 
@@ -118,11 +118,10 @@
     }
 }
 
-/* popular */
+/* popular food */
 .popular {
-    padding-top: 112px;
-    padding-bottom: 100px;
-    background-color: var(--bg-white);
+    padding: 112px 10% 100px;
+    background-color: var(--background-white);
     color: var(--text-black);
     text-align: center;
 }
@@ -131,13 +130,13 @@
     margin-top: 64px;
 }
 
-.popular-description {
+.popular-text {
     max-width: 660px;
     margin: 16px auto 0;
     text-align: left;
 }
 
-.popular-cards {
+.food-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,59 +145,60 @@
     margin: 108px auto 0;
 }
 
-.popular-card {
+.food-box,
+.chef-special,
+.seasonal-food {
     width: 292px;
     min-width: 0;
 }
 
-.popular-card img {
+.food-list img {
     width: 100%;
     height: auto;
 }
 
-.popular-card-title {
+.food-name {
     margin-top: 40px;
     font-size: 30px;
     line-height: 36px;
 }
 
-.popular-card .btn {
+.food-list .btn-border {
     min-width: 160px;
     margin-top: 24px;
 }
 
-.popular-featured {
+.chef-special {
     width: 529px;
 }
 
-.popular-featured .popular-card-title {
+.chef-special .food-name {
     margin-top: 24px;
     font-size: 56px;
     line-height: 64px;
 }
 
-.popular-seasonal {
+.seasonal-food {
     width: 298px;
 }
 
 /* atmosphere - desktop */
 .atmosphere {
     aspect-ratio: 1536 / 799;
-    padding-top: 152px;
-    padding-bottom: 152px;
-    background-color: var(--bg-black);
+    padding: 152px 10%;
+    background-color: var(--background-black);
     background-image: url("../images/dining-table.jpg");
     background-position: center;
     background-size: cover;
     color: var(--text-white);
 }
 
-.atmosphere-description {
+.atmosphere-text {
     max-width: 520px;
     margin-top: 48px;
 }
 
-/* atmosphere-tablet */
+/* atmosphere - tablet */
 @media (max-width: 1280px) {
     .atmosphere {
         aspect-ratio: 1024 / 592;
@@ -208,7 +208,7 @@
     }
 }
 
-/* atmosphere-mobile */
+/* atmosphere - mobile */
 @media (max-width: 768px) {
     .atmosphere {
         aspect-ratio: auto;
@@ -229,14 +229,14 @@
         margin: 0 6.25%;
     }
 
-    .atmosphere-description {
+    .atmosphere-text {
         width: 87.5%;
         max-width: 560px;
         margin: 24px auto 0;
     }
 }
 
-/* popular-tablet and mobile */
+/* popular food - tablet and mobile */
 @media (max-width: 1280px) {
     .popular {
         padding: 112px 0 0;
@@ -250,13 +250,13 @@
         margin-top: 48px;
     }
 
-    .popular-description {
+    .popular-text {
         width: 60%;
         max-width: 600px;
         text-align: center;
     }
 
-    .popular-cards {
+    .food-list {
         flex-direction: column;
         align-items: stretch;
         gap: 0;
@@ -264,36 +264,36 @@
         margin-top: 48px;
     }
 
-    .popular-card,
-    .popular-featured,
-    .popular-seasonal {
+    .food-box,
+    .chef-special,
+    .seasonal-food {
         width: 100%;
         padding-bottom: 80px;
     }
 
-    .popular-featured {
+    .chef-special {
         order: -1;
     }
 
-    .popular-card img {
+    .food-list img {
         aspect-ratio: 8 / 5;
         object-fit: cover;
         object-position: center;
     }
 
-    .popular-seasonal img {
+    .seasonal-food img {
         object-position: center top;
     }
 
-    .popular-card-title,
-    .popular-featured .popular-card-title {
+    .food-name,
+    .chef-special .food-name {
         margin-top: 24px;
         font-size: 30px;
         line-height: 36px;
     }
 }
 
-/* popular-mobile */
+/* popular food - mobile */
 @media (max-width: 768px) {
     .popular {
         padding-top: 64px;
@@ -315,25 +315,27 @@
         margin-top: 64px;
     }
 
-    .popular-description {
+    .popular-text {
         width: 87.5%;
         max-width: 560px;
     }
 
-    .popular-cards {
+    .food-list {
         margin-top: 96px;
     }
 
-    .popular-card {
+    .food-box,
+    .chef-special,
+    .seasonal-food {
         padding-bottom: 96px;
     }
 
-    .popular-card img {
+    .food-list img {
         aspect-ratio: 320 / 293;
     }
 
-    .popular-card-title,
-    .popular-featured .popular-card-title {
+    .food-name,
+    .chef-special .food-name {
         margin-top: 48px;
     }
 }

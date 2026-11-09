@@ -1,4 +1,4 @@
-/* header - restaurant desktop */
+/* restaurant header - desktop */
 .header {
     position: absolute;
     top: 0;
@@ -8,14 +8,14 @@
 }
 
 /* restaurant hero */
-.restaurant-hero {
+.hero {
     display: flex;
     aspect-ratio: 1540 / 784;
-    background-color: var(--bg-black);
+    background-color: var(--background-black);
     color: var(--text-white);
 }
 
-.restaurant-hero-content {
+.hero-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,26 +23,26 @@
     padding: 128px 50px 130px 10%;
 }
 
-.restaurant-hero-content > * {
+.hero-box > * {
     width: 100%;
     max-width: 560px;
 }
 
-.restaurant-hero-title {
+.hero-title {
     margin-top: 25px;
 }
 
-.restaurant-hero-description {
+.hero-text {
     margin-top: 50px;
 }
 
-.restaurant-hero-photo {
+.hero-photo {
     position: relative;
     width: 50%;
     overflow: hidden;
 }
 
-.restaurant-hero-photo img {
+.hero-photo img {
     position: absolute;
     top: 0;
     left: 0;
@@ -52,10 +52,10 @@
     object-position: right center;
 }
 
-/* elegance  */
+/* restaurant photos */
 .elegance {
     padding: 105px 10% 190px;
-    background-color: var(--bg-white);
+    background-color: var(--background-white);
     color: var(--text-black);
     text-align: center;
 }
@@ -86,9 +86,9 @@
     height: auto;
 }
 
-/* gallery*/
+/* gallery */
 .gallery {
-    background-color: var(--bg-white);
+    background-color: var(--background-white);
     color: var(--text-black);
 }
 
@@ -102,7 +102,7 @@
     line-height: 1;
 }
 
-.gallery-description {
+.gallery-text {
     max-width: 960px;
     margin: 0 auto;
 }
@@ -117,7 +117,7 @@
 /* reviews */
 .reviews {
     padding: 170px 10% 100px;
-    background-color: var(--bg-white);
+    background-color: var(--background-white);
     color: var(--text-black);
     text-align: center;
 }
@@ -127,14 +127,14 @@
     line-height: 1;
 }
 
-.reviews-cards {
+.review-list {
     display: flex;
     gap: 30px;
     max-width: 1248px;
     margin: 40px auto 0;
 }
 
-.review-card {
+.review-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,7 +142,7 @@
     gap: 40px;
     width: 30%;
     padding: 65px 5px 50px;
-    background-color: var(--bg-black);
+    background-color: var(--background-black);
     color: var(--text-white);
 }
 
@@ -160,7 +160,7 @@
     height: auto;
 }
 
-/* tablet pictures */
+/* tablet photos */
 .elegance-tablet,
 .gallery-tablet {
     display: none;
@@ -170,10 +170,10 @@
 @media (max-width: 1280px) {
     .header {
         position: static;
-        background: var(--bg-black);
+        background: var(--background-black);
     }
 
-    .restaurant-hero {
+    .hero {
         display: block;
         aspect-ratio: auto;
         background-image: url("../images/tablet-restaurant-hero.jpg");
@@ -181,20 +181,20 @@
         background-size: cover;
     }
 
-    .restaurant-hero-content {
+    .hero-box {
         width: 100%;
         padding: 160px 13% 150px;
     }
 
-    .restaurant-hero-content > * {
+    .hero-box > * {
         max-width: 600px;
     }
 
-    .restaurant-hero-description {
+    .hero-text {
         margin-top: 56px;
     }
 
-    .restaurant-hero-photo {
+    .hero-photo {
         display: none;
     }
 
@@ -240,7 +240,7 @@
         padding-bottom: 120px;
     }
 
-    .reviews-cards {
+    .review-list {
         flex-direction: column;
         align-items: center;
         gap: 175px;
@@ -248,7 +248,7 @@
         margin-top: 110px;
     }
 
-    .review-card {
+    .review-box {
         width: 100%;
         padding: 90px 25px 80px;
         gap: 84px;
@@ -259,40 +259,40 @@
     }
 }
 
-/* mobile pictures and line break */
+/* mobile photos and title line break */
 .elegance-mobile,
 .gallery-mobile,
-.restaurant-title-mobile {
+.mobile-linebreak {
     display: none;
 }
 
 /* restaurant - mobile */
 @media (max-width: 768px) {
-    .restaurant-hero-content {
+    .hero-box {
         padding: 70px 5% 80px;
     }
 
-    .restaurant-hero-content > * {
+    .hero-box > * {
         max-width: 450px;
     }
 
-    .restaurant-hero-title {
+    .hero-title {
         margin-top: 20px;
         font-size: 80px;
         line-height: 1;
     }
 
-    .restaurant-title-wide,
+    .desktop-linebreak,
     .elegance-tablet,
     .gallery-tablet {
         display: none;
     }
 
-    .restaurant-title-mobile {
+    .mobile-linebreak {
         display: block;
     }
 
-    .restaurant-hero-description {
+    .hero-text {
         margin-top: 50px;
     }
 
@@ -327,7 +327,7 @@
         font-size: 80px;
     }
 
-    .gallery-description {
+    .gallery-text {
         margin-top: 25px;
     }
 
@@ -346,13 +346,13 @@
         font-size: 65px;
     }
 
-    .reviews-cards {
+    .review-list {
         max-width: 480px;
         gap: 75px;
         margin-top: 60px;
     }
 
-    .review-card {
+    .review-box {
         padding: 80px 20px;
         gap: 60px;
     }
