@@ -185,3 +185,212 @@
     height: auto;
     margin: 50px auto 0;
 }
+
+/* about - tablet */
+@media (max-width: 1280px) {
+    .header {
+        position: static;
+        background-color: var(--background-black);
+    }
+
+    .header-box {
+        padding: 40px 10%;
+    }
+
+    .hero {
+        flex-direction: column;
+        aspect-ratio: auto;
+    }
+
+    .hero-photo {
+        width: 100%;
+        aspect-ratio: 1025 / 755;
+        background-image: url("../images/about-us/tablet-hero.png");
+    }
+
+    .hero-box {
+        width: 100%;
+        padding: 80px 15% 120px;
+    }
+
+    .hero-heading {
+        justify-content: center;
+    }
+
+    .hero-line {
+        display: none;
+    }
+
+    .hero-text {
+        max-width: 600px;
+        margin-top: 60px;
+    }
+
+    .kitchen-photos {
+        gap: 0;
+        aspect-ratio: 1025 / 580;
+    }
+
+    .kitchen-left {
+        background-image: url("../images/about-us/tablet-culinary-left.png");
+    }
+
+    .kitchen-right {
+        background-image: url("../images/about-us/tablet-culinary-right.png");
+    }
+
+    .kitchen-text {
+        padding: 55px 15%;
+    }
+
+    .commitment {
+        aspect-ratio: 1025 / 750;
+        background-image: url("../images/about-us/tablet-commitment.png");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .commitment-box {
+        width: 100%;
+        padding: 150px 15%;
+    }
+
+    .commitment-box h2 {
+        width: 100%;
+        font-size: 70px;
+    }
+
+    .commitment-box p {
+        width: 100%;
+        max-width: 700px;
+        margin-top: 50px;
+    }
+
+    .commitment-left,
+    .commitment-right {
+        display: none;
+    }
+
+    .awards {
+        aspect-ratio: 1025 / 2520;
+        padding: 100px 10%;
+        background-image: url("../images/about-us/tablet-achievements.png");
+    }
+
+    .awards-text {
+        max-width: 650px;
+    }
+
+    .award-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 110px;
+        margin-top: 100px;
+    }
+
+    .award-box {
+        width: 100%;
+    }
+
+    .award-line {
+        width: 115px;
+        margin-top: 60px;
+    }
+
+    .award-box img {
+        width: 425px;
+        margin-top: 30px;
+    }
+}
+
+/* about - mobile */
+@media (max-width: 768px) {
+    .header-box {
+        padding: 40px 5%;
+    }
+
+    .hero-photo {
+        aspect-ratio: 640 / 300;
+        background-image: url("../images/about-us/mobile-hero.png");
+    }
+
+    .hero-box {
+        padding: 65px 10% 130px;
+    }
+
+    .hero-box h1 {
+        margin-top: 15px;
+        font-size: 80px;
+    }
+
+    .kitchen h2 {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 45px 5% 35px;
+        font-size: 70px;
+    }
+
+    .kitchen-photos {
+        aspect-ratio: 640 / 380;
+    }
+
+    .kitchen-left {
+        width: 100%;
+        background-image: url("../images/about-us/culinary-left.png");
+    }
+
+    .kitchen-right {
+        display: none;
+    }
+
+    .kitchen-text {
+        padding: 25px 5% 35px;
+    }
+
+    .commitment {
+        aspect-ratio: auto;
+    }
+
+    .commitment-box {
+        padding: 140px 10%;
+    }
+
+    .commitment-box h2 {
+        font-size: 55px;
+    }
+
+    .commitment-box p {
+        max-width: 550px;
+        margin-top: 45px;
+    }
+
+    .awards {
+        aspect-ratio: 640 / 1650;
+        padding: 100px 5%;
+    }
+
+    .awards h2 {
+        font-size: 55px;
+    }
+
+    .awards-text {
+        max-width: 550px;
+    }
+
+    .award-list {
+        gap: 75px;
+        margin-top: 180px;
+    }
+
+    .award-line {
+        width: 65px;
+        margin-top: 10px;
+    }
+
+    .award-box img {
+        width: 225px;
+        margin-top: 20px;
+    }
+}
