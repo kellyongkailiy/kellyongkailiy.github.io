@@ -213,3 +213,101 @@
 .reservation .btn-border {
     margin-top: 25px;
 }
+
+/* membership tier */
+.membership {
+    background-color: var(--background-white);
+    color: var(--text-black);
+}
+
+.membership-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 460px;
+    padding: 120px 10%;
+    background-color: var(--background-black);
+    background-image: url("../images/promotion/membership.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--text-white);
+    text-align: center;
+}
+
+.membership-text {
+    max-width: 850px;
+    margin-top: 40px;
+}
+
+.membership-cards {
+    padding: 40px 10% 65px;
+}
+
+.membership-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 95px;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.membership-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    max-width: 350px;
+    min-height: 440px;
+    padding: 35px 20px 30px;
+    background-color: var(--background-black);
+    background-position: center;
+    background-size: cover;
+    color: var(--text-white);
+    text-align: center;
+}
+
+.membership-box h3 {
+    margin-top: 35px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.membership-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 35px 0 40px;
+    font-family: var(--font-paragraph);
+    font-size: 19px;
+    line-height: 1.5;
+    list-style-type: none;
+    text-align: left;
+}
+
+.membership-benefits li {
+    display: flex;
+    gap: 15px;
+}
+
+.benefit-star {
+    min-width: 15px;
+}
+
+.membership-box .btn {
+    min-width: 160px;
+    margin-top: auto;
+}
+
+#classic {
+    background-image: url("../images/promotion/membership-left.jpg");
+}
+
+#prestige {
+    background-image: url("../images/promotion/membership-middle.jpg");
+}
+
+#elite {
+    background-image: url("../images/promotion/membership-right.jpg");
+}
