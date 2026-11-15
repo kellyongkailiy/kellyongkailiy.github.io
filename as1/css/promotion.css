@@ -311,3 +311,135 @@
 #elite {
     background-image: url("../images/promotion/membership-right.jpg");
 }
+
+.hero-tablet,
+.seasonal-box .seasonal-tablet {
+    display: none;
+}
+
+/* promotion - tablet */
+@media (max-width: 1280px) {
+    .header-box {
+        padding: 40px 8%;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-photo,
+    .seasonal-box .seasonal-photo {
+        display: none;
+    }
+
+    .hero-tablet,
+    .seasonal-box .seasonal-tablet {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-box {
+        width: 100%;
+        padding: 100px 10%;
+    }
+
+    .hero-content {
+        width: 70%;
+        max-width: 560px;
+    }
+
+    .seasonal {
+        padding: 110px 10% 100px;
+    }
+
+    .seasonal-text {
+        max-width: 650px;
+    }
+
+    .seasonal-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .seasonal-box {
+        width: 70%;
+        max-width: 560px;
+    }
+
+    .evening-banner {
+        background-image: url("../images/promotion/tablet-dining.png");
+    }
+
+    .evening-text {
+        max-width: 600px;
+    }
+
+    .dining-gallery {
+        padding: 100px 10% 0;
+    }
+
+    .dining-list {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        width: 70%;
+        max-width: 570px;
+    }
+
+    .dining-row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .dining-photo,
+    #dining-middle .dining-photo,
+    #dining-bottom .dining-photo {
+        width: 100%;
+        max-width: 570px;
+        margin-left: 0;
+    }
+
+    .dining-row h3,
+    #dining-middle h3 {
+        width: 100%;
+        padding: 0;
+    }
+
+    #dining-middle {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    #dining-bottom {
+        margin-top: 0;
+    }
+
+    .reservation {
+        padding: 130px 10% 120px;
+    }
+
+    .membership-banner {
+        padding: 100px 10%;
+        background-image: url("../images/promotion/tablet-membership.png");
+    }
+
+    .membership-text {
+        max-width: 650px;
+    }
+
+    .membership-cards {
+        padding: 100px 10% 110px;
+    }
+
+    .membership-list {
+        flex-wrap: wrap;
+        gap: 95px 10%;
+        max-width: 790px;
+    }
+
+    .membership-box {
+        width: 45%;
+    }
+}
