@@ -1,4 +1,4 @@
-/* about header */
+/*header */
 .header {
     position: absolute;
     top: 0;
@@ -12,7 +12,7 @@
     padding-bottom: 25px;
 }
 
-/* about hero */
+/* hero */
 .hero {
     display: flex;
     aspect-ratio: 1540 / 760;
@@ -186,7 +186,7 @@
     margin: 50px auto 0;
 }
 
-/* about - tablet */
+/* tablet */
 @media (max-width: 1280px) {
     .header {
         position: static;
@@ -304,7 +304,7 @@
     }
 }
 
-/* about - mobile */
+/*mobile */
 @media (max-width: 768px) {
     .header-box {
         padding: 40px 5%;

@@ -113,7 +113,7 @@
     }
 
     .hero-title {
-        font-size: clamp(64px, 22.4vw, 84px);
+        font-size: clamp(64px, 22vw, 84px);
         line-height: 1.2131;
     }
 }
@@ -169,7 +169,7 @@
 }
 
 .chef-special {
-    width: 529px;
+    width: 530px;
 }
 
 .chef-special .food-name {
@@ -184,8 +184,8 @@
 
 /* atmosphere - desktop */
 .atmosphere {
-    aspect-ratio: 1536 / 799;
-    padding: 152px 10%;
+    aspect-ratio: 1535 / 800;
+    padding: 150px 10%;
     background-color: var(--background-black);
     background-image: url("../images/dining-table.jpg");
     background-position: center;
