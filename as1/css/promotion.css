@@ -46,3 +46,170 @@
 .hero-content .btn {
     margin-top: 50px;
 }
+
+/* seasonal specials */
+.seasonal {
+    padding: 110px 10% 90px;
+    background-color: var(--background-white);
+    color: var(--text-black);
+    text-align: center;
+}
+
+.seasonal-line {
+    width: 65px;
+    margin: 10px auto 40px;
+    border-bottom: 1px solid var(--background-light);
+}
+
+.seasonal-text {
+    max-width: 950px;
+    margin: 40px auto 0;
+}
+
+.seasonal-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1240px;
+    margin: 80px auto 0;
+}
+
+.seasonal-box {
+    width: 30%;
+}
+
+.seasonal-box img {
+    width: 100%;
+    height: auto;
+}
+
+.seasonal-box h3 {
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.seasonal-box p {
+    max-width: 330px;
+    min-height: 60px;
+    margin: 25px auto 0;
+}
+
+.seasonal-box .btn-border {
+    margin-top: 25px;
+}
+
+/* an evening to remember */
+.evening {
+    background-color: var(--background-white);
+    color: var(--text-black);
+}
+
+.evening-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 490px;
+    padding: 100px 10%;
+    background-color: var(--background-black);
+    background-image: url("../images/promotion/dining.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--text-white);
+    text-align: center;
+}
+
+.evening-banner h2 {
+    margin-top: 15px;
+}
+
+.evening-text {
+    max-width: 850px;
+    margin-top: 35px;
+}
+
+/* dining photos */
+.dining-gallery {
+    padding: 90px 10% 0;
+}
+
+.dining-list {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.dining-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dining-photo {
+    width: 65%;
+    max-width: 810px;
+    height: auto;
+}
+
+.dining-row h3 {
+    width: 35%;
+    padding: 0 25px;
+    font-size: 25px;
+    line-height: 1;
+    text-align: center;
+}
+
+#dining-top {
+    position: relative;
+    z-index: 2;
+}
+
+#dining-middle {
+    margin-top: -250px;
+}
+
+#dining-middle h3 {
+    width: 50%;
+}
+
+#dining-middle .dining-photo {
+    width: 50%;
+    max-width: 605px;
+}
+
+#dining-bottom {
+    position: relative;
+    z-index: 1;
+    margin-top: -120px;
+}
+
+#dining-bottom .dining-photo {
+    width: 40%;
+    max-width: 510px;
+    margin-left: 25%;
+}
+
+/* reservation */
+.reservation {
+    padding: 40px 5% 35px;
+    text-align: center;
+}
+
+.reservation-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.reservation-line {
+    width: 25px;
+    border-top: 1px solid var(--text-grey);
+}
+
+.reservation .btn-border {
+    margin-top: 25px;
+}
