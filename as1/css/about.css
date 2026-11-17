@@ -12,19 +12,29 @@
     padding-bottom: 25px;
 }
 
-/* hero */
-.hero {
+/* hero and commitment */
+.hero,
+.commitment {
     display: flex;
     aspect-ratio: 1540 / 760;
     background-color: var(--background-black);
     color: var(--text-white);
 }
 
+.hero-photo,
+.kitchen-left,
+.kitchen-right,
+.commitment-left,
+.commitment-right,
+.awards {
+    background-position: center;
+    background-size: cover;
+}
+
+/* hero */
 .hero-photo {
     width: 55%;
     background-image: url("../images/about-us/hero.png");
-    background-position: center;
-    background-size: cover;
 }
 
 .hero-box {
@@ -70,7 +80,6 @@
 .kitchen h2 {
     padding: 70px 5% 55px;
     font-size: 95px;
-    line-height: 1;
 }
 
 .kitchen-photos {
@@ -82,15 +91,11 @@
 .kitchen-left {
     width: 55%;
     background-image: url("../images/about-us/culinary-left.png");
-    background-position: center;
-    background-size: cover;
 }
 
 .kitchen-right {
     width: 45%;
     background-image: url("../images/about-us/culinary-right.png");
-    background-position: center;
-    background-size: cover;
 }
 
 .kitchen-text {
@@ -98,13 +103,6 @@
 }
 
 /* commitment */
-.commitment {
-    display: flex;
-    aspect-ratio: 1540 / 760;
-    background-color: var(--background-black);
-    color: var(--text-white);
-}
-
 .commitment-box {
     display: flex;
     flex-direction: column;
@@ -117,7 +115,6 @@
     width: 75%;
     margin: 0 auto;
     font-size: 60px;
-    line-height: 1;
 }
 
 .commitment-box p {
@@ -128,15 +125,11 @@
 .commitment-left {
     width: 35%;
     background-image: url("../images/about-us/commitment-left.png");
-    background-position: center;
-    background-size: cover;
 }
 
 .commitment-right {
     width: 30%;
     background-image: url("../images/about-us/commitment-right.png");
-    background-position: center;
-    background-size: cover;
 }
 
 /* awards */
@@ -148,8 +141,6 @@
     padding: 150px 10%;
     background-color: var(--background-black);
     background-image: url("../images/about-us/achievements.jpg");
-    background-position: center;
-    background-size: cover;
     color: var(--text-white);
     text-align: center;
 }
@@ -172,7 +163,6 @@
 
 .award-box h3 {
     font-size: 55px;
-    line-height: 1;
 }
 
 .award-line {

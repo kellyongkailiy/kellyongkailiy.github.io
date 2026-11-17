@@ -24,7 +24,7 @@
     padding: 120px 48px;
 }
 
-.hero-box>* {
+.hero-box > * {
     width: 100%;
     max-width: 410px;
     text-align: left;
@@ -35,7 +35,6 @@
 }
 
 .hero-text {
-    max-width: 410px;
     margin-top: 40px;
 }
 
@@ -55,67 +54,6 @@
     object-position: right center;
     transform: scale(1.3);
     transform-origin: center 70%;
-}
-
-/* header - tablet and mobile */
-@media (max-width: 1280px) {
-    .header {
-        position: static;
-        background: var(--background-black);
-    }
-}
-
-/* hero - tablet */
-@media (max-width: 1280px) {
-    .hero {
-        flex-direction: column-reverse;
-        aspect-ratio: auto;
-    }
-
-    .hero-photo {
-        width: 100%;
-        aspect-ratio: 1024 / 784;
-    }
-
-    .hero-photo img {
-        object-position: center;
-        transform: none;
-    }
-
-    .hero-box {
-        align-items: flex-start;
-        width: 100%;
-        padding: 100px 20.625% 80px;
-    }
-
-    .hero-text {
-        margin-top: 24px;
-    }
-}
-
-/* hero - mobile */
-@media (max-width: 768px) {
-    .hero-photo {
-        aspect-ratio: 3 / 2;
-    }
-
-    .hero-photo img {
-        object-position: center bottom;
-    }
-
-    .hero-box {
-        align-items: center;
-        padding: 100px 6.25% 80px;
-    }
-
-    .hero-box>* {
-        max-width: 480px;
-    }
-
-    .hero-title {
-        font-size: clamp(64px, 22vw, 84px);
-        line-height: 1.2131;
-    }
 }
 
 /* popular food */
@@ -198,46 +136,49 @@
     margin-top: 48px;
 }
 
-/* atmosphere - tablet */
+/* tablet */
 @media (max-width: 1280px) {
+    /* header */
+    .header {
+        position: static;
+        background: var(--background-black);
+    }
+
+    /* hero */
+    .hero {
+        flex-direction: column-reverse;
+        aspect-ratio: auto;
+    }
+
+    .hero-photo {
+        width: 100%;
+        aspect-ratio: 1024 / 784;
+    }
+
+    .hero-photo img {
+        object-position: center;
+        transform: none;
+    }
+
+    .hero-box {
+        align-items: flex-start;
+        width: 100%;
+        padding: 100px 20.625% 80px;
+    }
+
+    .hero-text {
+        margin-top: 24px;
+    }
+
+    /* atmosphere */
     .atmosphere {
         aspect-ratio: 1024 / 592;
         padding: 160px 9.375% 128px;
         background-position: left top;
         background-size: auto 128%;
     }
-}
 
-/* atmosphere - mobile */
-@media (max-width: 768px) {
-    .atmosphere {
-        aspect-ratio: auto;
-        padding: 0 0 72px;
-        background-image: none;
-        text-align: center;
-    }
-
-    .atmosphere {
-        display: block;
-        width: 100%;
-        aspect-ratio: 8 / 5;
-        margin-bottom: 48px;
-        background: url("../images/dining-table.jpg") center / cover no-repeat;
-    }
-
-    .atmosphere h2 {
-        margin: 0 6.25%;
-    }
-
-    .atmosphere-text {
-        width: 87.5%;
-        max-width: 560px;
-        margin: 24px auto 0;
-    }
-}
-
-/* popular food - tablet and mobile */
-@media (max-width: 1280px) {
+    /* popular food */
     .popular {
         padding: 112px 0 0;
     }
@@ -285,16 +226,61 @@
         object-position: center top;
     }
 
-    .food-name,
-    .chef-special .food-name {
+    .food-name {
         margin-top: 24px;
+    }
+
+    .chef-special .food-name {
         font-size: 30px;
         line-height: 36px;
     }
 }
 
-/* popular food - mobile */
+/* mobile */
 @media (max-width: 768px) {
+    /* hero */
+    .hero-photo {
+        aspect-ratio: 3 / 2;
+    }
+
+    .hero-photo img {
+        object-position: center bottom;
+    }
+
+    .hero-box {
+        align-items: center;
+        padding: 100px 6.25% 80px;
+    }
+
+    .hero-box > * {
+        max-width: 480px;
+    }
+
+    .hero-title {
+        font-size: clamp(64px, 22vw, 84px);
+        line-height: 1.2131;
+    }
+
+    /* atmosphere */
+    .atmosphere {
+        aspect-ratio: 8 / 5;
+        padding: 0 0 72px;
+        text-align: center;
+        margin-bottom: 48px;
+        background: url("../images/dining-table.jpg") center / cover no-repeat;
+    }
+
+    .atmosphere h2 {
+        margin: 0 6.25%;
+    }
+
+    .atmosphere-text {
+        width: 87.5%;
+        max-width: 560px;
+        margin: 24px auto 0;
+    }
+
+    /* popular food */
     .popular {
         padding-top: 64px;
     }
@@ -303,7 +289,7 @@
         margin: 0 6.25%;
     }
 
-    .popular .section-title>span {
+    .popular .section-title > span {
         display: block;
     }
 

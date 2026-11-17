@@ -53,16 +53,22 @@
 }
 
 /* restaurant photos */
-.elegance {
-    padding: 105px 10% 190px;
+.elegance,
+.gallery,
+.reviews {
     background-color: var(--background-white);
     color: var(--text-black);
+}
+
+.elegance {
+    padding: 105px 10% 190px;
     text-align: center;
 }
 
-.elegance-title {
+.elegance-title,
+.gallery-title,
+.reviews-title {
     font-size: 95px;
-    line-height: 1;
 }
 
 .elegance-images {
@@ -87,19 +93,9 @@
 }
 
 /* gallery */
-.gallery {
-    background-color: var(--background-white);
-    color: var(--text-black);
-}
-
 .gallery-heading {
     padding: 0 10% 35px;
     text-align: center;
-}
-
-.gallery-title {
-    font-size: 95px;
-    line-height: 1;
 }
 
 .gallery-text {
@@ -117,14 +113,7 @@
 /* reviews */
 .reviews {
     padding: 170px 10% 100px;
-    background-color: var(--background-white);
-    color: var(--text-black);
     text-align: center;
-}
-
-.reviews-title {
-    font-size: 95px;
-    line-height: 1;
 }
 
 .review-list {
@@ -148,7 +137,6 @@
 
 .review-name {
     font-size: 30px;
-    line-height: 1;
 }
 
 .review-text {
@@ -160,9 +148,12 @@
     height: auto;
 }
 
-/* tablet photos */
+/* responsive photos and title line break */
 .elegance-tablet,
-.gallery-tablet {
+.gallery-tablet,
+.elegance-mobile,
+.gallery-mobile,
+.mobile-linebreak {
     display: none;
 }
 
@@ -259,13 +250,6 @@
     }
 }
 
-/* mobile photos and title line break */
-.elegance-mobile,
-.gallery-mobile,
-.mobile-linebreak {
-    display: none;
-}
-
 /* restaurant - mobile */
 @media (max-width: 768px) {
     .hero-box {
@@ -279,7 +263,6 @@
     .hero-title {
         margin-top: 20px;
         font-size: 80px;
-        line-height: 1;
     }
 
     .desktop-linebreak,
@@ -333,7 +316,6 @@
 
     .gallery-mobile {
         display: block;
-        width: 100%;
     }
 
     .reviews {

@@ -45,7 +45,6 @@
 
 .food-box h2 {
     font-size: 30px;
-    line-height: 1;
 }
 
 #lobster {
@@ -85,8 +84,6 @@
 
 .main-course-text h2 {
     margin-bottom: 35px;
-    font-size: 95px;
-    line-height: 1;
 }
 
 .food-item {
@@ -102,7 +99,6 @@
 
 .food-title h3 {
     font-size: 30px;
-    line-height: 1;
 }
 
 .price {
@@ -136,9 +132,10 @@
     color: var(--text-white);
 }
 
-.dessert-hero h2 {
+.main-course-text h2,
+.dessert-hero h2,
+.drinks-text h2 {
     font-size: 95px;
-    line-height: 1;
 }
 
 .dessert-list {
@@ -184,11 +181,6 @@
     max-width: 550px;
 }
 
-.drinks-text h2 {
-    font-size: 95px;
-    line-height: 1;
-}
-
 .drinks .small-title {
     margin-top: 15px;
 }
@@ -229,7 +221,8 @@
         padding: 0 5%;
     }
 
-    .food-list {
+    .food-list,
+    .dessert-list {
         flex-direction: column;
         align-items: center;
         gap: 70px;
@@ -275,13 +268,6 @@
         background-image: url("../images/menu/tablet-dessert.png");
     }
 
-    .dessert-list {
-        flex-direction: column;
-        align-items: center;
-        gap: 70px;
-        padding: 80px 10%;
-    }
-
     .dessert-box,
     .dessert-low {
         width: 100%;
@@ -322,7 +308,6 @@
 
     .hero h1 {
         font-size: 50px;
-        line-height: 1;
     }
 
     .food-list {

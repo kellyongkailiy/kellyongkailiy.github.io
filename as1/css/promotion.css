@@ -31,7 +31,6 @@
 
 .hero-content h1 {
     margin-top: 40px;
-    line-height: 1;
 }
 
 .hero-text {
@@ -48,10 +47,15 @@
 }
 
 /* seasonal specials */
-.seasonal {
-    padding: 110px 10% 90px;
+.seasonal,
+.evening,
+.membership {
     background-color: var(--background-white);
     color: var(--text-black);
+}
+
+.seasonal {
+    padding: 110px 10% 90px;
     text-align: center;
 }
 
@@ -85,8 +89,11 @@
 
 .seasonal-box h3 {
     margin-top: 40px;
+}
+
+.seasonal-box h3,
+.membership-box h3 {
     font-size: 30px;
-    line-height: 1;
 }
 
 .seasonal-box p {
@@ -100,24 +107,23 @@
 }
 
 /* an evening to remember */
-.evening {
-    background-color: var(--background-white);
-    color: var(--text-black);
-}
-
-.evening-banner {
+.evening-banner,
+.membership-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 490px;
-    padding: 100px 10%;
     background-color: var(--background-black);
-    background-image: url("../images/promotion/dining.jpg");
     background-position: center;
     background-size: cover;
     color: var(--text-white);
     text-align: center;
+}
+
+.evening-banner {
+    min-height: 490px;
+    padding: 100px 10%;
+    background-image: url("../images/promotion/dining.jpg");
 }
 
 .evening-banner h2 {
@@ -156,7 +162,6 @@
     width: 35%;
     padding: 0 25px;
     font-size: 25px;
-    line-height: 1;
     text-align: center;
 }
 
@@ -215,24 +220,10 @@
 }
 
 /* membership tier */
-.membership {
-    background-color: var(--background-white);
-    color: var(--text-black);
-}
-
 .membership-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-height: 460px;
     padding: 120px 10%;
-    background-color: var(--background-black);
     background-image: url("../images/promotion/membership.jpg");
-    background-position: center;
-    background-size: cover;
-    color: var(--text-white);
-    text-align: center;
 }
 
 .membership-text {
@@ -269,8 +260,6 @@
 
 .membership-box h3 {
     margin-top: 35px;
-    font-size: 30px;
-    line-height: 1;
 }
 
 .membership-benefits {
@@ -345,7 +334,6 @@
     }
 
     .hero-content {
-        width: 70%;
         max-width: 560px;
     }
 
