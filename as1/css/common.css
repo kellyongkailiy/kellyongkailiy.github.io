@@ -245,6 +245,11 @@ p {
 
 .header-icon {
     display: none;
+    position: relative;
+    z-index: 1001;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
 }
 
 .header-icon img {
@@ -384,7 +389,42 @@ p {
     }
 
     .header-right {
-        display: none;
+        height: 100vh;
+        width: 100%;
+        opacity: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-black);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: all 300ms ease;
+        z-index: 1000;
+    }
+
+    .header-right.active {
+        opacity: 1;
+        right: 0;
+    }
+
+    .header-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-list > li {
+        margin: 10px 0;
+    }
+
+    .header-list a {
+        padding: 10px;
+        font-size: 30px;
+        line-height: 1;
+    }
+
+    .submenu a {
+        font-size: 15px;
     }
 
     .header-icon {
