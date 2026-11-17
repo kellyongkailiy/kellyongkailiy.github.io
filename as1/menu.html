@@ -19,7 +19,14 @@
             <div class="header-right">
                 <ul class="header-list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="menu.html" aria-current="page">Menu</a></li>
+                    <li class="has-submenu">
+                        <a class="active" href="menu.html" aria-current="page">Menu</a>
+                        <ul class="submenu">
+                            <li><a href="menu.html#main-course">Main Course</a></li>
+                            <li><a href="menu.html#dessert">Dessert</a></li>
+                            <li><a href="menu.html#drinks">Drinks</a></li>
+                        </ul>
+                    </li>
                     <li><a href="order.html">Order</a></li>
                     <li><a href="promotion.html">Promotion</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -57,7 +64,7 @@
             </div>
         </section>
         <!-- main course -->
-        <section class="main-course">
+        <section class="main-course" id="main-course">
             <div class="main-course-photo"></div>
             <div class="main-course-text">
                 <h2>MAIN COURSE</h2>
@@ -112,7 +119,7 @@
         </section>
 
         <!-- dessert -->
-        <section class="dessert">
+        <section class="dessert" id="dessert">
             <div class="dessert-hero">
                 <h2>DESSERT</h2>
             </div>
@@ -153,7 +160,7 @@
         </section>
 
         <!-- drinks -->
-        <section class="drinks">
+        <section class="drinks" id="drinks">
             <div class="drinks-text">
                 <h2>BEST CROCTAILS</h2>
                 <p class="small-title">IN TOWN</p>

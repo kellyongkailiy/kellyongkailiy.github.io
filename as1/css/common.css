@@ -168,6 +168,45 @@ p {
     color: var(--text-white);
 }
 
+/* menu submenu */
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu > a::after {
+    content: " ⇂";
+    margin-left: 5px;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 5;
+    min-width: 180px;
+    max-width: 250px;
+    padding: 10px 0;
+    background-color: var(--background-black);
+    list-style-type: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.has-submenu:hover > .submenu {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.submenu a {
+    padding: 10px 20px;
+}
+
+.submenu a:hover {
+    color: var(--text-gold);
+}
+
+/* logo */
 .logo {
     display: flex;
     align-items: center;
