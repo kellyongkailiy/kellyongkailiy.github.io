@@ -82,3 +82,223 @@
     min-width: 190px;
     padding: 15px 35px;
 }
+
+/* chef's signatures */
+.signatures {
+    padding: 100px 10% 125px;
+    background-color: var(--background-black);
+    color: var(--text-white);
+}
+
+.signatures-box {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.signatures-box h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.dish-list {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.dish-card {
+    width: 50%;
+    max-width: 610px;
+    background-color: var(--background-dark);
+}
+
+.dish-card img {
+    width: 100%;
+    height: auto;
+}
+
+.dish-content {
+    padding: 40px 30px 50px;
+}
+
+.dish-content h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.dish-text {
+    max-width: 430px;
+    min-height: 60px;
+    margin-top: 25px;
+}
+
+.dish-price {
+    margin-top: 15px;
+    font-family: var(--font-normal);
+    font-size: 15px;
+    color: var(--text-gold);
+}
+
+.dish-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* quantity display */
+.quantity {
+    display: flex;
+    width: 30%;
+    max-width: 155px;
+    border: 1px solid var(--text-grey);
+    font-family: var(--font-paragraph);
+    font-size: 19px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.quantity span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    min-height: 45px;
+}
+
+.quantity .quantity-number {
+    width: 30%;
+    border-left: 1px solid var(--text-grey);
+    border-right: 1px solid var(--text-grey);
+}
+
+.dish-actions .btn-gold {
+    width: 35%;
+    max-width: 190px;
+    padding: 15px 10px;
+}
+
+.dish-actions .btn {
+    width: 30%;
+    max-width: 155px;
+    padding: 15px 10px;
+    border-color: var(--text-grey);
+}
+
+/* house favourite */
+.house {
+    padding: 100px 10%;
+    background-color: var(--background-white);
+}
+
+.house-feature {
+    display: flex;
+    align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: var(--background-black);
+    color: var(--text-white);
+}
+
+.house-photo {
+    width: 45%;
+    height: auto;
+}
+
+.house-content {
+    width: 55%;
+    padding: 60px 10%;
+}
+
+.house-content h2 {
+    margin-top: 10px;
+    font-size: 45px;
+    line-height: 1;
+}
+
+.house-text {
+    max-width: 350px;
+    margin-top: 65px;
+}
+
+.house-actions {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.house-actions .quantity {
+    width: 45%;
+    max-width: 175px;
+}
+
+.house-actions .btn-white {
+    width: 45%;
+    max-width: 170px;
+    padding: 15px 10px;
+    background-color: var(--background-white);
+    color: var(--text-black);
+}
+
+/* sushi favourites */
+#sushi .dish-card {
+    width: 35%;
+    max-width: 400px;
+}
+
+#sushi .dish-content {
+    padding-bottom: 40px;
+}
+
+#sushi .dish-content h3 {
+    margin-top: 0;
+}
+
+#sushi .dish-text {
+    min-height: 90px;
+}
+
+#sushi .dish-actions {
+    flex-direction: column;
+    gap: 10px;
+}
+
+#sushi .quantity,
+#sushi .dish-actions .btn-gold,
+#sushi .dish-actions .btn {
+    width: 100%;
+    max-width: 100%;
+}
+
+#sushi .quantity span {
+    width: 25%;
+}
+
+#sushi .quantity .quantity-number {
+    width: 50%;
+}
+
+#sushi .dish-actions .btn-gold,
+#sushi .dish-actions .btn {
+    min-height: 50px;
+    padding: 10px;
+}
+
+/* review your cart */
+.review {
+    max-width: 650px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.review-text {
+    margin-top: 40px;
+}
+
+.review .btn-gold {
+    margin-top: 35px;
+}
